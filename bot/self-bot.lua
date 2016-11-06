@@ -266,7 +266,7 @@ function create_config( )
     "member-control",
     "plugins",
     "self-manager",
-    "solid"
+    "makan"
     },
     sudo_users = {90285047}, --Sudo users
     moderation = {data = 'data/moderation.json'},
