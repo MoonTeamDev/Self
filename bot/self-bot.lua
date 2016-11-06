@@ -216,6 +216,9 @@ function create_self( )
   self = {
     names = {
     "ماکان",
+    "ماکی",
+    "Maky",
+    "maky",
     "mkn",
     "MAKAN",
     "Makan",
