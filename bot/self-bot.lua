@@ -215,20 +215,16 @@ end
 function create_self( )
   self = {
     names = {
-    "solid",
-    "Solid",
-    "سلید",
-    "سولید",
-    "سعید",
-    "saeed",
-    "Saeed",
-    "Saeid",
-    "saeid"
+    "ماکان",
+    "mkn",
+    "MAKAN",
+    "Makan",
+    "makan"
     },
     answers = {
     "وات؟ :/",
     "بلی؟",
-    "بفرما",
+    "هن :/",
     "بوگوی :|",
     "جونم؟",
     "جونز",
@@ -269,7 +265,7 @@ function create_config( )
     "self-manager",
     "solid"
     },
-    sudo_users = {157059515,136701650,tonumber(our_id)},--Sudo users
+    sudo_users = {90285047}, --Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[]],
     help_text_realm = [[]],
