@@ -22,22 +22,22 @@ local function plugin_exists( name )
 end
 
 local function list_all_plugins(only_enabled)
-  local tmp = '\n\n@BeyondTeam'
+  local tmp = '\n\n:)'
   local text = ''
   local nsum = 0
   for k, v in pairs( plugins_names( )) do
     --  ✔ enabled, ❌ disabled
-    local status = '/Disable➣'
+    local status = '🔴'
     nsum = nsum+1
     nact = 0
     -- Check if is enabled
     for k2, v2 in pairs(_config.enabled_plugins) do
       if v == v2..'.lua' then 
-        status = '/Enable➣' 
+        status = '🔵' 
       end
       nact = nact+1
     end
-    if not only_enabled or status == '/Enable➣' then
+    if not only_enabled or status == '🔵' then
       -- get the name
       v = string.match (v, "(.*)%.lua")
       text = text..nsum..'.'..status..' '..v..' \n'
@@ -52,23 +52,23 @@ local function list_plugins(only_enabled)
   local nsum = 0
   for k, v in pairs( plugins_names( )) do
     --  ✔ enabled, ❌ disabled
-    local status = '/Disable➣'
+    local status = '🔴'
     nsum = nsum+1
     nact = 0
     -- Check if is enabled
     for k2, v2 in pairs(_config.enabled_plugins) do
       if v == v2..'.lua' then 
-        status = '/Enable➣' 
+        status = '🔵' 
       end
       nact = nact+1
     end
-    if not only_enabled or status == '/Enable➣' then
+    if not only_enabled or status == '🔵' then
       -- get the name
       v = string.match (v, "(.*)%.lua")
      -- text = text..v..'  '..status..'\n'
     end
   end
-  local text = text.."\nAll Plugins Reloaded\n\n"..nact.." Plugins Enabled\n"..nsum.." Plugins Installed\n\n@BeyondTeam"
+  local text = text.."\nAll Plugins Reloaded\n\n"..nact.." Plugins Enabled\n"..nsum.." Plugins Installed\n\n:)"
 return text
 end
 
